@@ -1,7 +1,1 @@
-*.obj
-*.OBJ
-*.csm
-*.CSM
-*.~*
-*.bak
-*.BAK
+a.out.js

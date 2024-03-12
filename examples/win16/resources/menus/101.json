@@ -1,0 +1,24 @@
+[
+    {
+        "kind": "popup",
+        "label": "&File",
+        "items": [
+            {
+                "kind": "menuitem",
+                "label": "E&xit",
+                "menu_id": 200
+            }
+        ]
+    },
+    {
+        "kind": "popup",
+        "label": "&Help",
+        "items": [
+            {
+                "kind": "menuitem",
+                "label": "&About",
+                "menu_id": 300
+            }
+        ]
+    }
+]

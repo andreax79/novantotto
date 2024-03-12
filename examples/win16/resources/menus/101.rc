@@ -1,0 +1,11 @@
+101 MENU DISCARDABLE
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       200
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      300
+    END
+END

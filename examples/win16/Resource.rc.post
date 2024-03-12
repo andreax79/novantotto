@@ -1,0 +1,65 @@
+#line 11 "Resource.rc"
+#include "windows.h"
+#line 24 "Resource.rc"
+100             ICON    DISCARDABLE     "APP.ICO"
+#line 31 "Resource.rc"
+101 MENU DISCARDABLE
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       200
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      300
+    END
+END
+#line 49 "Resource.rc"
+103 DIALOG DISCARDABLE  0, 0, 147, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            100,-1,7,7,20,20
+    LTEXT           "Win16 Example application.",-1,34,7,91,8
+    LTEXT           "\2512017 Transmission Zero",-1,34,17,86,8
+    DEFPUSHBUTTON   "OK",1,90,46,50,14,WS_GROUP
+END
+#line 66 "Resource.rc"
+102 ACCELERATORS DISCARDABLE
+BEGIN
+    "a",            300,          ASCII,  ALT, NOINVERT
+END
+#line 4 "Win16App.ver"
+VS_VERSION_INFO    VERSIONINFO DISCARDABLE
+FILEVERSION        1,0,0,0
+PRODUCTVERSION     1,0,0,0
+FILEFLAGSMASK      VS_FFI_FILEFLAGSMASK
+
+
+
+  FILEFLAGS        0
+
+FILEOS             VOS_DOS_WINDOWS16
+FILETYPE           VFT_APP
+FILESUBTYPE        VFT2_UNKNOWN
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "080904E4"
+    BEGIN
+      VALUE "CompanyName", "Transmission Zero\0"
+      VALUE "FileDescription", "Win16 Example application\0"
+      VALUE "FileVersion", "1.0.0.0\0"
+      VALUE "InternalName", "Win16App\0"
+      VALUE "LegalCopyright", "(C)2017 Transmission Zero\0"
+      VALUE "OriginalFilename", "Win16App.exe\0"
+      VALUE "ProductName", "Win16 Test application\0"
+      VALUE "ProductVersion", "1.0.0.0\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x809, 1252
+  END
+END
